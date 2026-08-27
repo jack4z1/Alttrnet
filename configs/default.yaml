@@ -1,0 +1,56 @@
+# ALTTRNET Default Configuration
+# ================================
+# This is a template for experiment configurations.
+# Do NOT modify frozen values without re-running the full evaluation suite.
+#
+# Usage:
+#   Load with: yaml.safe_load(open("configs/default.yaml"))
+#   Or use core.config for programmatic access.
+
+project:
+  name: alttrnet
+  version: "0.1.0"
+  max_parameters: 17_000_000_000
+
+# Frozen chunking parameters (validated by Step 1A)
+chunking:
+  size: 400       # words per chunk
+  overlap: 50     # words of overlap
+  # step is computed: size - overlap = 350
+
+# Frozen embedding model (validated by Step 1A)
+embedding:
+  model: nomic-embed-text
+  provider: ollama
+
+# Frozen retrieval parameters (validated by Step 1B.6b)
+retrieval:
+  dense_top_k: 20
+  bm25_top_k: 20
+  final_top_k: 5
+  rrf_k: 60       # kept for backward-compat with eval scripts
+  reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+
+# ChromaDB settings (validated by Step 1A)
+chroma:
+  collection_name: knowledge_base
+  space: cosine
+
+# LLM for answering (prototype — NOT the final Alttrnet model)
+llm:
+  model: qwen3:14b
+  provider: ollama
+  think: false
+
+# Evaluation settings
+evaluation:
+  seed: 42
+  run_passes: 2    # number of reproducibility check passes
+
+# Future: training configuration will go here
+# training:
+#   ...
+
+# Future: data mixture will go here
+# data:
+#   ...

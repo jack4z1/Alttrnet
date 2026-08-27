@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ChromaDB (large binary data)
+chroma_db/
+chroma_db_backup*/
+chroma_db_before*/
+
+# Large data / checkpoints / artifacts
+checkpoints/
+artifacts/
+*.bin
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.pkl
+*.pickle
+
+# Logs and output (keep .gitignore-safe ones only)
+*.log
+wandb/
+mlruns/
+.lightning/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+
+# Evaluation output (regenerable)
+*_run1.txt
+*_run2.txt
+diagnose_hybrid_output.txt
+diag_query_adaptive_run1.txt
+diag_query_adaptive_run2.txt
+corpus_dump.txt
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model artifacts
+*.tar.gz
+*.zip

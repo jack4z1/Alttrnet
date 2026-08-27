@@ -1,0 +1,24 @@
+# Alttrnet dependencies — pinned for reproducibility
+# Regenerate with: pip compile pyproject.toml
+
+# Embedding & vector store
+chromadb>=1.0
+ollama>=0.6
+
+# Web extraction
+trafilatura>=2.0
+
+# Retrieval
+rank-bm25>=0.2
+
+# Reranking (cross-encoder)
+sentence-transformers>=5.0
+torch>=2.0
+
+# Utilities
+numpy>=1.24
+
+# Dev / testing
+pytest>=7.0
+pytest-cov>=4.0
+ruff>=0.1
