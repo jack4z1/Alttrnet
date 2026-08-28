@@ -5,9 +5,8 @@ These tests verify the chunking algorithm is stable and correct.
 Any failure here indicates a breaking change to a frozen component.
 """
 
-import pytest
 
-from core.chunker import chunk_text, CHUNK_SIZE, CHUNK_OVERLAP, CHUNK_STEP
+from core.chunker import CHUNK_OVERLAP, CHUNK_SIZE, CHUNK_STEP, chunk_text
 
 
 class TestChunkConstants:

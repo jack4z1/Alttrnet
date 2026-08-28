@@ -25,6 +25,9 @@ dependencies = [
     "sentence-transformers>=5.0",
     "torch>=2.0",
 
+    # Configuration
+    "pyyaml>=6.0",
+
     # Utilities
     "numpy>=1.24",
 ]

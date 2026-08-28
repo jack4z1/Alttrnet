@@ -4,11 +4,8 @@ tests/test_logging.py — Tests for core.logging
 """
 
 import json
-from pathlib import Path
 
-import pytest
-
-from core.logging import get_logger, ExperimentLogger
+from core.logging import get_logger
 
 
 class TestExperimentLogger:

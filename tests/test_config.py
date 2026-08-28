@@ -3,10 +3,10 @@ tests/test_config.py — Tests for core.config (central configuration)
 ====================================================================
 """
 
-import pytest
-from pathlib import Path
 
-from core.config import PROJECT, PATHS, MODELS, CHUNKING, RETRIEVAL, CHROMA, ENV
+import pytest
+
+from core.config import CHROMA, CHUNKING, ENV, MODELS, PATHS, PROJECT, RETRIEVAL
 
 
 class TestProjectConfig:

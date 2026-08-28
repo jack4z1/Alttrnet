@@ -4,15 +4,14 @@ tests/test_ids.py — Tests for core.ids (deterministic ID generation)
 Verifies that IDs are stable, deterministic, and follow the spec.
 """
 
-import pytest
 
 from core.ids import (
+    FILE_SCHEME,
     make_chunk_id,
     make_document_id,
     normalize_doc_path,
-    url_for_file,
     title_from_markdown,
-    FILE_SCHEME,
+    url_for_file,
 )
 
 

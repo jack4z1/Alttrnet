@@ -5,9 +5,7 @@ tests/test_seeds.py — Tests for core.seeds (reproducibility)
 
 import random
 
-import pytest
-
-from core.seeds import set_global_seed, get_global_seed, derive_seed, experiment_seed
+from core.seeds import derive_seed, experiment_seed, get_global_seed, set_global_seed
 
 
 class TestSetGlobalSeed:

@@ -3,10 +3,7 @@ tests/test_eval_format.py — Tests for core.eval_format
 =======================================================
 """
 
-import json
-from pathlib import Path
 
-import pytest
 
 from core.eval_format import EvalResult, EvalSuite
 

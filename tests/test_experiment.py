@@ -3,11 +3,7 @@ tests/test_experiment.py — Tests for core.experiment (experiment metadata)
 ==========================================================================
 """
 
-import json
-import tempfile
-from pathlib import Path
 
-import pytest
 
 from core.experiment import ExperimentMeta
 

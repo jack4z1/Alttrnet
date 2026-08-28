@@ -27,9 +27,9 @@ Usage:
     exp.save("artifacts/retrieval_baseline_dense.json")
 """
 
-import json
 import hashlib
-from dataclasses import dataclass, field, asdict
+import json
+from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Optional
